@@ -18,4 +18,11 @@ func main() {
 	for _, r := range records.Records {
 		fmt.Printf("%+v\n", r)
 	}
+
+	fmt.Println()
+	rrr, err := table.GetRecord("recLrbPrGWLHWtp6U")
+	if err != nil {
+		panic(err)
+	}
+	fmt.Printf("%+v\n", rrr)
 }
